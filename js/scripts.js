@@ -1,7 +1,16 @@
 $(document).ready(function() {
   $("#dark-mode").click(function() {
     $("body").addClass("dark-mode");
+    $("#dark-mode").hide();
+    $("#light-mode").show();
+  });
+});
 
+$(document).ready(function() {
+  $("#light-mode").click(function() {
+    $("body").removeClass("dark-mode");
+    $("#light-mode").hide();
+    $("#dark-mode").show();
   });
 });
 
