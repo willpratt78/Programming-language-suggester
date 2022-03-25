@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  $("#dark-mode").click(function() {
+    $("body").addClass("dark-mode");
+
+  });
+});
+
+$(document).ready(function() {
 $("#quiz-form").submit(function(e) {
   e.preventDefault();
   const data = parseInt($("#data").val());
