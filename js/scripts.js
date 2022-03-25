@@ -7,7 +7,20 @@ $("#quiz-form").submit(function(e) {
   const orginized = parseInt($("#orginized").val());
   const active = parseInt($("#active").val());
 
-console.log(data);
-console.log(animal);
+  const total = data + animal + color + orginized + active
+
+  let result;
+  let image;
+
+  if(total <= 7) {
+    result = "Python"
+
+  } else if (total <=11) {
+    result = "C#"
+
+  } else if (total > 11) {
+    result = "Ruby"
+    
+  }
   });
 });
