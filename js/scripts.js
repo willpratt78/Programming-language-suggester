@@ -14,13 +14,17 @@ $("#quiz-form").submit(function(e) {
 
   if(total <= 7) {
     result = "Python"
-
+    image = "<img src='img/python.png'>"
   } else if (total <=11) {
     result = "C#"
-
+    image = "<img src='img/c.png'>"
   } else if (total > 11) {
     result = "Ruby"
-    
+    image = "<img src='img/ruby.png'>"
   }
+
+  $("#output").text("");
+  $("#output").append("<p>" + result + "<p>");
+  $("#output").append(image);
   });
 });
