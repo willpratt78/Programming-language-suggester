@@ -22,6 +22,7 @@ $("#quiz-form").submit(function(e) {
   const color = parseInt($("#color").val());
   const orginized = parseInt($("#orginized").val());
   const active = parseInt($("#active").val());
+  const name =$("input#name").val();
 
   const total = data + animal + color + orginized + active
 
@@ -40,7 +41,7 @@ $("#quiz-form").submit(function(e) {
   }
 
   $("#output").text("");
-  $("#output").append("<p>" + result + "<p>");
+  $("#output").append(`<p> Wow, ${name} you should study ${result} you've got great compatibility with it!!! <p>`);
   $("#output").append(image);
   });
 });
